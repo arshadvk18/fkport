@@ -16,9 +16,18 @@
   <section>
     <h3>About Me</h3>
     <p>
-      I'm Fatima Khan, a Process and Proposal Engineer with demonstrated experience in water and wastewater treatment projects
-      for both municipal and industrial clients. I specialize in techno-commercial proposals, process design, and cross-functional team coordination.
+      I am a <strong>Process & Proposal Engineer</strong> specializing in wastewater treatment and water solutions, with a strong background in process design, estimation, and proposal development.
     </p>
+    <p>
+      My goal is to cultivate a dynamic and rewarding career in <strong>Business Development</strong>, driving innovative projects and delivering exceptional results.
+    </p>
+    <p>
+      I aspire to leverage my expertise in a collaborative, cross-regional environment, fostering personal growth while contributing to organizational success.
+    </p>
+    <p>
+      With an unwavering commitment to integrity, I am passionate about enhancing water solutions for complex industries and working toward sustainable, impactful outcomes.
+    </p>
+    
   </section>
 
   <section>
@@ -28,13 +37,13 @@
       <div class="tenure">{{ job.tenure }}</div>
       <div *ngIf="job.isOpen" class="job-details">
         <p><strong>Job Title:</strong> {{ job.title }}</p>
-        <p><strong>Responsibilities:</strong> {{ job.responsibilities }}</p>
+        <!-- Use innerHTML to allow HTML rendering -->
+        <p><strong>Responsibilities:</strong> <span [innerHTML]="job.responsibilities"></span></p>
         <p><strong>Technologies/Tools Used:</strong> {{ job.tools }}</p>
         <p><strong>Achievements:</strong> {{ job.achievements }}</p>
       </div>
     </div>
   </section>
-
   <section>
     <h3>Education</h3>
     <p>
@@ -44,17 +53,53 @@
     </p>
   </section>
 
+  <!-- Updated Skills Section Starts Here -->
   <section>
-    <h3>Key Skills</h3>
-    <ul>
-      <li>Proposal Engineering</li>
-      <li>Process Design & Optimization</li>
-      <li>BOQ Preparation</li>
-      <li>Cost Estimation</li>
-      <li>AutoCAD, MATLAB, Aspen Plus</li>
-      <li>MS Office, Power BI</li>
-    </ul>
+    <h3>💡 Skills</h3>
+
+    <div class="skills-card">
+      <h4>🧠 Technical Skills</h4>
+      <ul>
+        <li>Pump head calculations and hydraulic analysis</li>
+        <li>Preliminary design of wastewater treatment technologies (UF/RO, MBR, conventional systems)</li>
+        <li>Reading and interpreting layout and section drawings</li>
+        <li>Proposal & pre-order engineering activities</li>
+        <li>Client communication during tendering and design stages</li>
+      </ul>
+    </div>
+
+    <div class="skills-card">
+      <h4>🛠️ Software Proficiency</h4>
+      <ul>
+        <li>Hydranautics IMSDesign (UF/RO design)</li>
+        <li>Memstar MBR Design Tool</li>
+        <li>DOW Water & Process Solutions tools</li>
+        <li>AutoCAD, MATLAB, Aspen Plus</li>
+        <li>MS Office (Excel, PowerPoint, Word), Power BI</li>
+      </ul>
+    </div>
+
+    <div class="skills-card">
+      <h4>🤝 Soft Skills</h4>
+      <ul>
+        <li>Effective communication and active listening</li>
+        <li>Team collaboration across cross-functional teams</li>
+        <li>Time management and meeting deadlines</li>
+        <li>Adaptability in dynamic environments</li>
+        <li>Problem-solving under constraints</li>
+      </ul>
+    </div>
+
+    <div class="skills-card">
+      <h4>💼 Sales Experience</h4>
+      <ul>
+        <li>Retail sales experience at <strong>Arslan Collection</strong> (fashion brand)</li>
+        <li>Customer engagement and persuasion techniques</li>
+        <li>Upselling and product recommendation strategies</li>
+      </ul>
+    </div>
   </section>
+  <!-- Updated Skills Section Ends Here -->
 
   <section>
     <h3>Languages</h3>

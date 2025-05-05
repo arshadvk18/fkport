@@ -14,33 +14,58 @@ export class AppComponent implements OnInit, AfterViewInit {
 
   jobs = [
     {
-      company: 'Veolia',
-      tenure: 'Mar 2023 – Present',
+      company: 'AQUA Water By TECTON, Ajman, UAE',
+      tenure: 'Oct 2024 – Present',
       title: 'Process & Proposal Engineer',
-      responsibilities: 'Led technical and commercial proposals, coordinated globally for optimal design and cost estimates.',
+      responsibilities: `• Analyze tender documents to understand project requirements and specifications. Prepare Bill of Quantities (BOQ) for equipment, valves, piping, and electrical load lists to assist in accurate cost estimation.<br>
+                       • Identify ambiguities in tender documents and formulate pre-bid queries to clarify project requirements.<br>
+                       • Perform detailed design calculations for wastewater/water treatment to ensure compliance with tender and project requirements.<br>
+                       • Coordinate with vendors to define equipment specs, secure accurate quotations, and compare quotes to ensure alignment with tender requirements.<br>
+                       • Design detailed Piping and Instrumentation Diagrams (P&ID) in collaboration with CAD engineers for system layout development.<br>
+                       • Deliver PowerPoint presentations to clients, offering alternative technological options and providing in-depth comparisons of Capex and Opex to help clients make informed decisions.`,
+      tools: 'AutoCAD, MS Excel, MS PowerPoint, MS Word, Power BI',
+      achievements: `• Successfully contributed to cost estimation and design calculations for large-scale water treatment projects.<br>
+                    • Played a key role in clarifying tender requirements and providing valuable pre-bid inputs.<br>
+                    • Delivered impactful client presentations, aiding decision-making with comprehensive cost analysis.`,
+      isOpen: false
+    },
+    {
+      company: 'Veolia Water Technology (Suez)',
+      tenure: 'Jul 2022 – Oct 2024',
+      title: 'Process Engineer',
+      responsibilities: `• Gained preliminary knowledge and hands-on experience with VWTS products such as ZWEED membranes, ZEEWLUNGMABR, Filtration & Spiral Wound Membrane elements, and F&M ROED.<br>
+                         • Interpreted and analyzed customer and consultant specifications for clear understanding and implementation.<br>
+                         • Coordinated with regional teams (Europe, North America, Southeast Asia) for P&ID development, technical queries, and reviews.<br>
+                         • Worked closely with CAD teams to prepare P&ID, Layouts, and PFDs.<br>
+                         • Collaborated with cross-functional teams for project review and completion.<br>
+                         • Conducted site visits in South Asia to address plant issues, observations, and provide actionable solutions for smooth operations.<br>
+                         • Prepared site visit reports with observations and corrective actions.<br>
+                         • Managed the Learning & Development platform, organizing training sessions to foster employee growth.<br>
+                         • Prepared control philosophies for MBR and RO units.<br>
+                         • Gained knowledge of OSC (Operational Sequential Cycle) and Control Logic.<br>
+                         • Delivered critical project documentation such as utility, chemical consumption lists, line lists, and valve lists.`,
       tools: 'AutoCAD, MATLAB, Aspen Plus, MS Office',
-      achievements: 'Successfully designed multiple large-scale wastewater treatment projects.',
+      achievements: `• Successfully contributed to the design and implementation of large-scale water treatment projects.<br>
+                     • Enhanced operational efficiency through plant observations and corrective actions during site visits.`,
       isOpen: false
+      
     },
     {
-      company: 'Veolia',
-      tenure: 'Jul 2022 – Feb 2023',
-      title: 'Graduate Engineer Trainee',
-      responsibilities: 'Supported proposal prep, BOQs, process calculations, and vendor liaison.',
-      tools: 'MS Excel, MS Word, AutoCAD',
-      achievements: 'Contributed to multiple successful project proposals and cost estimates.',
-      isOpen: false
-    },
-    {
-      company: 'Ion Exchange',
-      tenure: 'Apr – Jun 2021',
-      title: 'Marketing Intern',
-      responsibilities: 'Automated reference lists and worked with Power BI on analytics tasks.',
-      tools: 'Power BI, MS Excel',
-      achievements: 'Streamlined internal reference list process and improved reporting efficiency.',
+      company: 'Arvind Envisol Limited, Ahmedabad',
+      tenure: 'Dec 2018 – Jul 2022',
+      title: 'Senior Process Engineer',
+      responsibilities: `• Led proposals for EPC/Turnkey water treatment projects in the industrial sector.<br>
+                       • Prepared process design, mass balance, PFD, P&IDs, hydraulic flow diagrams, and plant layouts.<br>
+                       • Assessed and evaluated tenders and industrial inquiries for water and wastewater treatment, identifying key requirements and risks.<br>
+                       • Developed strategies for project bidding and coordinated with management on project-winning approaches.<br>
+                       • Designed, estimated, and prepared offers/contracts for water treatment, wastewater treatment, recycling, and zero liquid discharge systems.<br>
+                       • Coordinated with electrical and civil engineers for BOQ preparation and cost estimation.`,
+      tools: 'AutoCAD, MS Excel, MS Word',
+      achievements: `• Contributed significantly to successful project proposals, driving key water treatment projects.<br>
+                    • Played a pivotal role in designing and estimating large-scale water and wastewater treatment systems.`,
       isOpen: false
     }
-  ];
+];
 
   constructor(private renderer: Renderer2) {}
 

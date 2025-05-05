@@ -261,7 +261,41 @@ input:focus, textarea:focus {
   outline: none;
   box-shadow: 0 0 10px var(--accent);
 }
-
+.skills-card {
+    background: linear-gradient(to bottom right, #e0f7fa, #ffffff);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  .skills-card h4 {
+    margin-top: 0;
+    color: #00796b;
+  }
+  .skills-card ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+  }
+  /* Prevent double bullets by resetting list styles */
+.skills-card ul {
+    list-style: none; /* Remove default bullets */
+    padding-left: 0; /* Remove padding */
+  }
+  
+  .skills-card li {
+    position: relative;
+    padding-left: 1.5rem; /* Add custom padding for bullet styling */
+  }
+  
+  .skills-card li::before {
+    content: "\2022"; /* Unicode for bullet */
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.2rem; /* Customize size */
+    color: #00796b; /* Adjust bullet color */
+  }
+  
 /* --- Responsive --- */
 @media (max-width: 768px) {
   h1 {
