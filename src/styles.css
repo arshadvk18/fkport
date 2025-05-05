@@ -295,6 +295,20 @@ input:focus, textarea:focus {
     font-size: 1.2rem; /* Customize size */
     color: #00796b; /* Adjust bullet color */
   }
+  body.dark-theme .skills-card {
+    background: linear-gradient(135deg, #1e292f, #2c2c3c); /* match section dark gradient */
+    color: var(--text-dark);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    border-top: 3px solid var(--accent); /* visual consistency with section styling */
+  }
+  
+  body.dark-theme .skills-card h4 {
+    color: var(--accent); /* consistent teal heading */
+  }
+  
+  body.dark-theme .skills-card li::before {
+    color: var(--accent); /* match bullet points with global accent */
+  }
   
 /* --- Responsive --- */
 @media (max-width: 768px) {
