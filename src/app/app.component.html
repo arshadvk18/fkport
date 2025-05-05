@@ -1,10 +1,11 @@
-<!-- Put this at the top of app.component.html -->
+<!-- Theme toggle button -->
 <div class="theme-toggle" (click)="toggleTheme()" title="Toggle Theme">
   <i class="fas" [ngClass]="isDarkMode ? 'fa-sun' : 'fa-moon'"></i>
 </div>
 
 <div class="container">
-  <header data-aos="fade-down">
+
+  <header>
     <h1>Fatima Khan</h1>
     <h2>Process & Proposal Engineer</h2>
     <p class="intro">
@@ -12,7 +13,7 @@
     </p>
   </header>
 
-  <section data-aos="fade-up">
+  <section>
     <h3>About Me</h3>
     <p>
       I'm Fatima Khan, a Process and Proposal Engineer with demonstrated experience in water and wastewater treatment projects
@@ -20,7 +21,7 @@
     </p>
   </section>
 
-  <section data-aos="fade-up">
+  <section>
     <h3>Experience</h3>
     <div *ngFor="let job of jobs" class="experience-card" (click)="toggleJobDetails(job)">
       <div class="company-name">{{ job.company }}</div>
@@ -34,14 +35,16 @@
     </div>
   </section>
 
-  <section data-aos="fade-up">
+  <section>
     <h3>Education</h3>
-    <p><strong>B. Tech in Chemical Engineering</strong>, SANT GADGE BABA
-      AMRAVATI UNIVERSITY,
-      AMRAVATI (2014 – 2018)<br>CGPA: 8.23 / 10</p>
+    <p>
+      <strong>B. Tech in Chemical Engineering</strong>, SANT GADGE BABA
+      AMRAVATI UNIVERSITY, AMRAVATI (2014 – 2018)<br>
+      CGPA: 8.23 / 10
+    </p>
   </section>
 
-  <section data-aos="fade-up">
+  <section>
     <h3>Key Skills</h3>
     <ul>
       <li>Proposal Engineering</li>
@@ -53,14 +56,15 @@
     </ul>
   </section>
 
-  <section data-aos="fade-up">
+  <section>
     <h3>Languages</h3>
     <p>English, Hindi, Marathi</p>
   </section>
 
-  <section data-aos="fade-up">
+  <section>
     <h3>Contact</h3>
-    <p>Email: <a href="mailto:fatimakhan201995@gmail.com">fatimakhan201995&#64;gmail.com"</a></p>
+    <p>Email: <a href="mailto:fatimakhan201995@gmail.com">fatimakhan201995&#64;gmail.com</a></p>
     <p>LinkedIn: <a href="https://linkedin.com/in/fatima-khan-425710200" target="_blank">linkedin.com/in/fatima-khan-425710200</a></p>
   </section>
+
 </div>

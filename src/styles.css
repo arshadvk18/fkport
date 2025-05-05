@@ -197,42 +197,51 @@ a:hover {
   text-decoration: underline;
 }
 
-/* --- Cards --- */
-.experience-card, .skills-card {
+/* --- Cards (Experience) --- */
+.experience-card {
   background: #ffffff20;
-  padding: 2rem;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
   border-radius: 20px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.experience-card:hover, .skills-card:hover {
+.experience-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
-/* --- Animations --- */
-section[data-aos="fade-up"] {
-  animation: fadeInUp 1s ease-out;
+.company-name {
+  font-weight: bold;
+  font-size: 1.1rem;
 }
 
+.tenure {
+  font-size: 1rem;
+  opacity: 0.7;
+}
+
+.job-details {
+  margin-top: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.job-details p {
+  margin-bottom: 0.5rem;
+}
+
+/* --- Animations --- */
 @keyframes fadeIn {
   0% {
     opacity: 0;
     transform: translateY(-50px);
   }
   100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
     opacity: 1;
     transform: translateY(0);
   }
@@ -252,45 +261,7 @@ input:focus, textarea:focus {
   outline: none;
   box-shadow: 0 0 10px var(--accent);
 }
-/* Experience Section */
-.experience-card {
-    background: var(--glass-bg);
-    padding: 1rem;
-    margin: 1rem 0;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .experience-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  }
-  
-  .company-name {
-    font-weight: bold;
-    font-size: 1.1rem;
-  }
-  
-  .tenure {
-    font-size: 1rem;
-    color: var(--text-light);
-    opacity: 0.7;
-  }
-  
-  .job-details {
-    margin-top: 1rem;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  }
-  
-  .job-details p {
-    margin-bottom: 0.5rem;
-  }
-  
+
 /* --- Responsive --- */
 @media (max-width: 768px) {
   h1 {

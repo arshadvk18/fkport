@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, AfterViewInit, Renderer2, OnInit } from '@angular/core';
-import AOS from 'aos';
+import ScrollReveal from 'scrollreveal';
 
 @Component({
   selector: 'app-root',
@@ -11,6 +11,7 @@ import AOS from 'aos';
 })
 export class AppComponent implements OnInit, AfterViewInit {
   isDarkMode = false;
+
   jobs = [
     {
       company: 'Veolia',
@@ -44,20 +45,22 @@ export class AppComponent implements OnInit, AfterViewInit {
   constructor(private renderer: Renderer2) {}
 
   ngOnInit(): void {
-    // Load theme preference from localStorage
     const savedTheme = localStorage.getItem('theme');
     this.isDarkMode = savedTheme === 'dark';
-
-    // Apply theme on app start
     this.applyTheme();
   }
 
   ngAfterViewInit(): void {
-    AOS.init({
+    const sr = ScrollReveal({
       duration: 800,
-      offset: 100,
+      distance: '40px',
       easing: 'ease-in-out',
-      once: true
+      origin: 'bottom',
+      reset: false
+    });
+
+    sr.reveal('header, section', {
+      interval: 100
     });
   }
 
@@ -78,7 +81,7 @@ export class AppComponent implements OnInit, AfterViewInit {
     }
   }
 
-  toggleJobDetails(job: { isOpen: boolean; }): void {
+  toggleJobDetails(job: { isOpen: boolean }): void {
     job.isOpen = !job.isOpen;
   }
 }

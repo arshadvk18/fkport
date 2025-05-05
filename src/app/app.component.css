@@ -1,9 +1,0 @@
-header {
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-              url('/assets/hero-bg.jpeg') no-repeat center center / cover;
-  color: #fff;
-  text-align: center;
-  padding: 6rem 2rem;
-  border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-}
